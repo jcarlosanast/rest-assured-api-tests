@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWorld.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,16 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.HelloWorld.executor": "Run",
+    "JUnit.HelloWordTest.devoConhecerMatchersHamcrest.executor": "Run",
+    "JUnit.HelloWordTest.devoConhecerOutrasFormasRestAssured.executor": "Run",
+    "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
+    "JUnit.HelloWordTest.executor": "Debug",
+    "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.UserJsonTest.deveVerificarLista.executor": "Run",
+    "JUnit.UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas.executor": "Run",
+    "JUnit.UserJsonTest.deveVerificarPrimeiroNível.executor": "Run",
+    "JUnit.UserJsonTest.deveVerificarSegundoNivel.executor": "Run",
+    "JUnit.UserJsonTest.executor": "Debug",
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
     "Maven.rest-assured [install].executor": "Run",
@@ -49,9 +59,8 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.estudos.HelloWorld" />
+  <component name="RunManager" selected="JUnit.UserJsonTest.deveVerificarLista">
+    <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -59,13 +68,100 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.HelloWordTest" />
+      <option name="METHOD_NAME" value="devoConhecerOutrasFormasRestAssured" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserJsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserJsonTest.deveVerificarLista" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="METHOD_NAME" value="deveVerificarLista" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="METHOD_NAME" value="deveVerificarPrimeiroNivelOutrasFormas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserJsonTest.deveVerificarPrimeiroNível" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="METHOD_NAME" value="deveVerificarPrimeiroNível" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserJsonTest.deveVerificarSegundoNivel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="METHOD_NAME" value="deveVerificarSegundoNivel" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="JUnit.UserJsonTest.deveVerificarLista" />
+        <item itemvalue="JUnit.UserJsonTest.deveVerificarSegundoNivel" />
+        <item itemvalue="JUnit.UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas" />
+        <item itemvalue="JUnit.UserJsonTest" />
+        <item itemvalue="JUnit.UserJsonTest.deveVerificarPrimeiroNível" />
       </list>
     </recent_temporary>
   </component>
@@ -79,5 +175,20 @@
       <updated>1743525842433</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
+          <line>28</line>
+          <properties class="org.estudos.UserJsonTest" method="deveVerificarPrimeiroNivelOutrasFormas">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
