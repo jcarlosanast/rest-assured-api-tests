@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWordTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +40,13 @@
     "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
     "JUnit.HelloWordTest.executor": "Debug",
     "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.UserJsonTest.deveRetornarErroUsuario.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarLista.executor": "Run",
+    "JUnit.UserJsonTest.deveVerificarListaNaRaiz.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarPrimeiroNível.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarSegundoNivel.executor": "Run",
+    "JUnit.UserJsonTest.devoFazerVerificacaoAvancada.executor": "Run",
     "JUnit.UserJsonTest.executor": "Debug",
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
@@ -59,7 +59,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UserJsonTest.deveVerificarLista">
+  <component name="RunManager" selected="JUnit.UserJsonTest.devoFazerVerificacaoAvancada">
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -76,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserJsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserJsonTest.deveRetornarErroUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +86,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
       <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="deveRetornarErroUsuario" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserJsonTest.deveVerificarListaNaRaiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -117,23 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
       <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveVerificarPrimeiroNivelOutrasFormas" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserJsonTest.deveVerificarPrimeiroNível" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveVerificarPrimeiroNível" />
+      <option name="METHOD_NAME" value="deveVerificarListaNaRaiz" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserJsonTest.devoFazerVerificacaoAvancada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
+      <option name="METHOD_NAME" value="devoFazerVerificacaoAvancada" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserJsonTest.devoFazerVerificacaoAvancada" />
+        <item itemvalue="JUnit.UserJsonTest.deveVerificarListaNaRaiz" />
+        <item itemvalue="JUnit.UserJsonTest.deveRetornarErroUsuario" />
         <item itemvalue="JUnit.UserJsonTest.deveVerificarLista" />
         <item itemvalue="JUnit.UserJsonTest.deveVerificarSegundoNivel" />
-        <item itemvalue="JUnit.UserJsonTest.deveVerificarPrimeiroNivelOutrasFormas" />
-        <item itemvalue="JUnit.UserJsonTest" />
-        <item itemvalue="JUnit.UserJsonTest.deveVerificarPrimeiroNível" />
       </list>
     </recent_temporary>
   </component>
@@ -181,12 +182,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
-          <line>28</line>
+          <line>30</line>
           <properties class="org.estudos.UserJsonTest" method="deveVerificarPrimeiroNivelOutrasFormas">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
