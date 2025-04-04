@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTestRefatored.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java" afterDir="false" />
     </list>
@@ -23,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2v8TkEsKipXX51StNvXQN9pqX7e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +49,15 @@
     "JUnit.UserJsonTest.deveVerificarPrimeiroNível.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarSegundoNivel.executor": "Run",
     "JUnit.UserJsonTest.devoFazerVerificacaoAvancada.executor": "Run",
+    "JUnit.UserJsonTest.devoUnirJsonPathComJva.executor": "Run",
     "JUnit.UserJsonTest.executor": "Debug",
+    "JUnit.UserXMLTest.deveFazerPesquisaAvancadoComXMLeJava.executor": "Debug",
+    "JUnit.UserXMLTest.deveFazerPesquisaAvancadoComXPath.executor": "Run",
+    "JUnit.UserXMLTest.deveTrabalharComXML.executor": "Run",
+    "JUnit.UserXMLTest.devoFazerPesquisaAvancadaComXML.executor": "Run",
+    "JUnit.UserXMLTest.executor": "Run",
+    "JUnit.UserXMLTest.testeOraniza.executor": "Run",
+    "JUnit.UserXMLTestRefatored.executor": "Run",
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
     "Maven.rest-assured [install].executor": "Run",
@@ -59,7 +69,12 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UserJsonTest.devoFazerVerificacaoAvancada">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.estudos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserXMLTestRefatored">
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -76,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserJsonTest.deveRetornarErroUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserJsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -86,13 +101,58 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
       <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveRetornarErroUsuario" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserXMLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserXMLTestRefatored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTestRefatored" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserXMLTest.deveTrabalharComXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTest" />
+      <option name="METHOD_NAME" value="deveTrabalharComXML" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserJsonTest.deveVerificarLista" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserXMLTest.testeOraniza" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -101,56 +161,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveVerificarLista" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserJsonTest.deveVerificarListaNaRaiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveVerificarListaNaRaiz" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserJsonTest.deveVerificarSegundoNivel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="deveVerificarSegundoNivel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserJsonTest.devoFazerVerificacaoAvancada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserJsonTest" />
-      <option name="METHOD_NAME" value="devoFazerVerificacaoAvancada" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTest" />
+      <option name="METHOD_NAME" value="testeOraniza" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserJsonTest.devoFazerVerificacaoAvancada" />
-        <item itemvalue="JUnit.UserJsonTest.deveVerificarListaNaRaiz" />
-        <item itemvalue="JUnit.UserJsonTest.deveRetornarErroUsuario" />
-        <item itemvalue="JUnit.UserJsonTest.deveVerificarLista" />
-        <item itemvalue="JUnit.UserJsonTest.deveVerificarSegundoNivel" />
+        <item itemvalue="JUnit.UserXMLTestRefatored" />
+        <item itemvalue="JUnit.UserXMLTest" />
+        <item itemvalue="JUnit.UserJsonTest" />
+        <item itemvalue="JUnit.UserXMLTest.deveTrabalharComXML" />
+        <item itemvalue="JUnit.UserXMLTest.testeOraniza" />
       </list>
     </recent_temporary>
   </component>
@@ -182,17 +194,40 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
-          <line>30</line>
+          <line>31</line>
           <properties class="org.estudos.UserJsonTest" method="deveVerificarPrimeiroNivelOutrasFormas">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java</url>
+          <line>59</line>
+          <properties class="org.estudos.UserXMLTest" method="deveFazerPesquisaAvancadoComXMLeJava">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java</url>
+          <line>131</line>
+          <properties class="org.estudos.UserXMLTest" method="deveFazerPesquisaAvancadoComXPath">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
-          <line>114</line>
+          <line>115</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

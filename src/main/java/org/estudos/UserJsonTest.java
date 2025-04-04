@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
@@ -17,13 +18,13 @@ public class UserJsonTest {
     @Test
     public void deveVerificarPrimeiroNível() {
         given()
-                .when()
-                .get("https://restapi.wcaquino.me/users/1")
-                .then()
-                .statusCode(200)
-                .body("id", is(1))
-                .body("name", containsString("Silva"))
-                .body("age", greaterThan(18));
+        .when()
+            .get("https://restapi.wcaquino.me/users/1")
+        .then()
+            .statusCode(200)
+            .body("id", is(1))
+            .body("name", containsString("Silva"))
+            .body("age", greaterThan(18));
 
     }
 
@@ -47,46 +48,45 @@ public class UserJsonTest {
     @Test
     public void deveVerificarSegundoNivel() {
         given()
-                .when()
-                .get("https://restapi.wcaquino.me/users/2")
-                .then()
-                .statusCode(200)
-                .body("name", containsString("Joaquina"))
-                //níveis do Json
-                .body("endereco.rua", is("Rua dos bobos"));
+        .when()
+            .get("https://restapi.wcaquino.me/users/2")
+        .then()
+            .statusCode(200)
+            .body("name", containsString("Joaquina"))
+        //níveis do Json
+            .body("endereco.rua", is("Rua dos bobos"));
     }
 
     @Test
     public void deveVerificarLista() {
         given()
-                .when()
-                .get("https://restapi.wcaquino.me/users/3")
-                .then()
-                .statusCode(200)
-                .body("name", containsString("Ana Júlia"))
-                //Verifica a quantidade de objeticos dentro de uma lista (ARRAI) no Json
+        .when()
+            .get("https://restapi.wcaquino.me/users/3")
+        .then()
+            .statusCode(200)
+            .body("name", containsString("Ana Júlia"))
 
-                .body("filhos", hasSize(2))
+            //Verifica a quantidade de objeticos dentro de uma lista (ARRAI) no Json
+            .body("filhos", hasSize(2))
 
-                // Valida um valor dentro de uma lista no Jason
-                .body("filhos[0].name", is("Zezinho"))
-                .body("filhos[1].name", is("Luizinho"))
+            // Valida um valor dentro de uma lista no Jason
+            .body("filhos[0].name", is("Zezinho"))
+            .body("filhos[1].name", is("Luizinho"))
 
-                //Verifica um valor dentro de uma lista
-                .body("filhos.name", hasItem("Luizinho"))
-                .body("filhos.name", hasItems("Luizinho", "Zezinho"));
+            //Verifica um valor dentro de uma lista
+            .body("filhos.name", hasItem("Luizinho"))
+            .body("filhos.name", hasItems("Luizinho", "Zezinho"));
     }
 
     @Test
     public void deveRetornarErroUsuario() {
 
         given()
-                .when()
-                .get("https://restapi.wcaquino.me/users/4")
-                .then()
-                .statusCode(404)
-                .body("error", is("Usuário inexistente"));
-
+        .when()
+            .get("https://restapi.wcaquino.me/users/4")
+        .then()
+            .statusCode(404)
+            .body("error", is("Usuário inexistente"));
         }
 
     @Test
@@ -143,10 +143,22 @@ public class UserJsonTest {
             .body("id.max()", is(3))
             .body("salary.min()", is(1234.5678f))
             .body("salary.findAll{it != null}sum()", is(closeTo(3734.5678f,0.001)))
-            .body("salary.findAll{it != null}sum()", allOf(greaterThan(3000d), lessThan(5000d)))
+            .body("salary.findAll{it != null}sum()", allOf(greaterThan(3000d), lessThan(5000d)));
 
+    }
 
-        ;
+    @Test
+    public void devoUnirJsonPathComJva() {
+        ArrayList<String> name =
+            given()
+            .when()
+                .get("https://restapi.wcaquino.me/users")
+            .then()
+                .statusCode(200)
+                .extract().path("name.findAll{it.startsWith('Maria')}");
+        Assert.assertEquals(1, name.size());
+        Assert.assertTrue(name.get(0).equalsIgnoreCase("Maria Joaquina"));
+        Assert.assertEquals(name.get(0).toUpperCase(),"Maria Joaquina".toUpperCase());
 
     }
 
