@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTestRefatored.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTestRefatored.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +63,22 @@
     "JUnit.UserXMLTestRefatored.deveTrabalharComXML.executor": "Run",
     "JUnit.UserXMLTestRefatored.devoFazerPesquisaAvancadaComXML.executor": "Run",
     "JUnit.UserXMLTestRefatored.executor": "Run",
+    "JUnit.VerbosHTTP.deveAlteraUsuario.executor": "Run",
+    "JUnit.VerbosHTTP.deveCustomizarURL.executor": "Run",
+    "JUnit.VerbosHTTP.deveCustomizarURLParte2.executor": "Run",
+    "JUnit.VerbosHTTP.deveRemoverUsuario.executor": "Run",
+    "JUnit.VerbosHTTP.deveSalvarUsuario.executor": "Run",
+    "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap.executor": "Debug",
+    "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto.executor": "Run",
+    "JUnit.VerbosHTTP.deveSalvarUsuarioViaXML.executor": "Run",
+    "JUnit.VerbosHTTP.naoDeveRemoverUsuario.executor": "Run",
+    "JUnit.VerbosHTTP.naoDeveSalvarUsuarioSemNove.executor": "Run",
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
     "Maven.rest-assured [install].executor": "Run",
+    "Maven.rest-assured [package].executor": "Run",
+    "Maven.rest-assured [test].executor": "Run",
+    "Maven.rest-assured [validate].executor": "Run",
     "Maven.rest-assured [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -75,7 +92,7 @@
       <recent name="org.estudos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserXMLTestRefatored.deveTrabalharComXML">
+  <component name="RunManager" selected="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto">
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -92,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserXMLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerbosHTTP.deveCustomizarURLParte2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -101,44 +118,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserXMLTestRefatored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTestRefatored" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserXMLTestRefatored.deveTrabalharComXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTestRefatored" />
-      <option name="METHOD_NAME" value="deveTrabalharComXML" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
+      <option name="METHOD_NAME" value="deveCustomizarURLParte2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserXMLTestRefatored.devoFazerPesquisaAvancadaComXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerbosHTTP.deveRemoverUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -147,14 +134,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTestRefatored" />
-      <option name="METHOD_NAME" value="devoFazerPesquisaAvancadaComXML" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
+      <option name="METHOD_NAME" value="deveRemoverUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserXMLTest.deveTrabalharComXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerbosHTTP.deveSalvarUsuarioUsandoMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -163,8 +150,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.UserXMLTest" />
-      <option name="METHOD_NAME" value="deveTrabalharComXML" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
+      <option name="METHOD_NAME" value="deveSalvarUsuarioUsandoMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerbosHTTP.deveSalvarUsuarioUsandoObjeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
+      <option name="METHOD_NAME" value="deveSalvarUsuarioUsandoObjeto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerbosHTTP.naoDeveRemoverUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
+      <option name="METHOD_NAME" value="naoDeveRemoverUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserXMLTestRefatored.deveTrabalharComXML" />
-        <item itemvalue="JUnit.UserXMLTestRefatored" />
-        <item itemvalue="JUnit.UserXMLTestRefatored.devoFazerPesquisaAvancadaComXML" />
-        <item itemvalue="JUnit.UserXMLTest.deveTrabalharComXML" />
-        <item itemvalue="JUnit.UserXMLTest" />
+        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto" />
+        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap" />
+        <item itemvalue="JUnit.VerbosHTTP.naoDeveRemoverUsuario" />
+        <item itemvalue="JUnit.VerbosHTTP.deveRemoverUsuario" />
+        <item itemvalue="JUnit.VerbosHTTP.deveCustomizarURLParte2" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +225,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserXMLTest.java</url>
           <line>59</line>
-          <properties class="org.estudos.UserXMLTest" method="deveFazerPesquisaAvancadoComXMLeJava">
+          <properties class="org.estudos.UserXMLTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
