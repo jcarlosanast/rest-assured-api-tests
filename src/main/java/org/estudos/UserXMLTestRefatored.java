@@ -1,11 +1,14 @@
 package org.estudos;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.LogDetail;
 import io.restassured.path.xml.element.Node;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.ArrayList;
 
@@ -14,12 +17,59 @@ import static org.hamcrest.Matchers.*;
 
 public class UserXMLTestRefatored {
 
+    public static RequestSpecification reqSpec;
+    public static ResponseSpecification resSpec;
+
     @BeforeClass
     //Para utilização do Before é necessário criar uma classe Static
-    public static void setup(){
+    public static void setup() {
         baseURI = "https://restapi.wcaquino.me";
-//        port = 80;
-//        basePath = "/v2";
+//        port = 443;
+        basePath = "";
+
+        RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
+        reqBuilder.log(LogDetail.ALL);
+        reqSpec = reqBuilder.build();
+
+        ResponseSpecBuilder resBuilder = new ResponseSpecBuilder();
+        resBuilder.expectStatusCode(200);
+        resSpec = resBuilder.build();
+
+        requestSpecification = reqSpec;
+        responseSpecification = resSpec;
+    }
+
+    @Test
+    public void deveTrabalharComXML() {
+        given()
+/**
+                //Crinado um parametro default no Setup, podemos simplificar as chamadas e retirar os Spec do Teste
+                .spec(reqSpec)*/
+        .when()
+            .get("/usersXML/3")
+        .then()
+            .statusCode(200)
+                /**
+                Crinado um parametro default no Setup, podemos simplificar as chamadas e retirar os Spec do Teste
+//                .spec(resSpec)
+*/
+                //forma para criar um parametro para não precisar de passar o path completo sempre
+            .rootPath("user")
+                .body("name", is("Ana Julia"))
+                //@para referenciar um atraibuto
+                .body("@id", is("3"))
+
+                //tira a declaração de um parametro utilizado na consulta
+                .rootPath("user.filhos")
+                .body("name.size()", is(2))
+
+                .detachRootPath("filhos")
+                .body("filhos.name[0]", is("Zezinho"))
+                .body("filhos.name[1]", is("Luizinho"))
+
+                .appendRootPath("filhos")
+                .body("name", hasItem("Luizinho"))
+                .body("name", hasItems("Luizinho","Zezinho"));
     }
 
     @Test
@@ -54,51 +104,22 @@ public class UserXMLTestRefatored {
     }
 
     @Test
-    public void deveTrabalharComXML() {
-
-
-
-        given()
-                .when()
-                .get("/usersXML/3")
-                .then()
-                .statusCode(200)
-
-                //forma para criar um parametro para não precisar de passar o path completo sempre
-                .rootPath("user")
-                .body("name", is("Ana Julia"))
-                //@para referenciar um atraibuto
-                .body("@id", is("3"))
-
-                //tira a declaração de um parametro utilizado na consulta
-                .rootPath("user.filhos")
-                .body("name.size()", is(2))
-
-                .detachRootPath("filhos")
-                .body("filhos.name[0]", is("Zezinho"))
-                .body("filhos.name[1]", is("Luizinho"))
-
-                .appendRootPath("filhos")
-                .body("name", hasItem("Luizinho"))
-                .body("name", hasItems("Luizinho","Zezinho"));
-    }
-
-    @Test
     public void devoFazerPesquisaAvancadaComXML() {
 
         given()
-                .when()
-                .get("/usersXML")
-                .then()
-                .statusCode(200)
-                .body("users.user.size()", is(3))
-                .body("users.user.findAll{it.age.toInteger() <= 25}.size()", is(2))
-                .body("users.user.@id", hasItems("1", "2", "3" ))
-                .body("users.user.find{it.age == 25}.name", is("Maria Joaquina"))
-                .body("users.user.findAll{it.name.toString().contains('n')}.name", hasItems("Maria Joaquina","Ana Julia"))
-                .body("users.user.salary.find{it != null}.toDouble()", is(1234.5678))
-                .body("users.user.age.collect{it.toInteger() * 2}", hasItems(40, 50, 60))
-                .body("users.user.name.findAll{it.toString().startsWith('Maria')}.collect{it.toString().toUpperCase()}",is("MARIA JOAQUINA"));
+            .spec(reqSpec)
+        .when()
+            .get("/usersXML")
+        .then()
+            .spec(resSpec)
+            .body("users.user.size()", is(3))
+            .body("users.user.findAll{it.age.toInteger() <= 25}.size()", is(2))
+            .body("users.user.@id", hasItems("1", "2", "3" ))
+            .body("users.user.find{it.age == 25}.name", is("Maria Joaquina"))
+            .body("users.user.findAll{it.name.toString().contains('n')}.name", hasItems("Maria Joaquina","Ana Julia"))
+            .body("users.user.salary.find{it != null}.toDouble()", is(1234.5678))
+            .body("users.user.age.collect{it.toInteger() * 2}", hasItems(40, 50, 60))
+            .body("users.user.name.findAll{it.toString().startsWith('Maria')}.collect{it.toString().toUpperCase()}",is("MARIA JOAQUINA"));
     }
 
     @Test

@@ -1,13 +1,8 @@
 package org.estudos;
 
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.LogDetail;
 import io.restassured.path.xml.element.Node;
 
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -62,20 +57,12 @@ public class UserXMLTest {
 
     @Test
     public void deveTrabalharComXML() {
-        RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
-        reqBuilder.log(LogDetail.ALL);
-        RequestSpecification requestSpecification = reqBuilder.build();
-
-        ResponseSpecBuilder resBuilder = new ResponseSpecBuilder();
-        resBuilder.expectStatusCode(200);
-        ResponseSpecification responseSpecification  = resBuilder.build();
 
         given()
-            .spec(requestSpecification)
         .when()
-            .get("https://restapi.wcaquino.me/usersXML/3")
+                .get("https://restapi.wcaquino.me/usersXML/3")
         .then()
-                .spec(responseSpecification)
+            .statusCode(200)
 
                 //forma para criar um parametro para não precisar de passar o path completo sempre
             .rootPath("user")
