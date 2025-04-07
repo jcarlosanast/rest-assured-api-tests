@@ -3,6 +3,7 @@ package org.estudos;
 import io.restassured.http.ContentType;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -37,7 +38,7 @@ public class VerbosHTTP {
 
     @Test
     public void deveSalvarUsuarioUsandoObjeto() {
-        User user = new User("Usuario via objeto", 35);
+        User user = new User("Usuario deserializado", 35);
 
         given()
             .log().all()
@@ -51,6 +52,28 @@ public class VerbosHTTP {
             .body("id", is(notNullValue()))
             .body("name",is("Usuario via objeto"))
             .body("age",is(35));
+    }
+
+    @Test
+    public void deveDeserializarObjetoAoSalvarUsuario() {
+        User user = new User("Usuario deserializado", 35);
+
+        User usuarioInserido = given()
+            .log().all()
+            .contentType("Application/json")
+            .body(user)
+        .when()
+            .post("https://restapi.wcaquino.me/users")
+        .then()
+            .log().all()
+            .statusCode(201)
+            .body("id", is(notNullValue()))
+            .extract().body().as(User.class);
+
+        System.out.println(usuarioInserido);
+        Assert.assertThat(usuarioInserido.getId(), notNullValue());
+        Assert.assertEquals("Usuario deserializado", usuarioInserido.getName());
+        Assert.assertThat(usuarioInserido.getAge(), is(35));
     }
 
 

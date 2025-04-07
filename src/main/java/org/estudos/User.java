@@ -2,6 +2,7 @@ package org.estudos;
 
 public class User {
 
+    private long id;
     private String name;
     private Integer age;
     private Double salary;
@@ -33,5 +34,18 @@ public class User {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + ", salary=" + salary + '}';
     }
 }

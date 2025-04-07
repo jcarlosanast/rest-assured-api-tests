@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +62,10 @@
     "JUnit.VerbosHTTP.deveAlteraUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveCustomizarURL.executor": "Run",
     "JUnit.VerbosHTTP.deveCustomizarURLParte2.executor": "Run",
+    "JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveRemoverUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuario.executor": "Run",
-    "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap.executor": "Debug",
+    "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuarioViaXML.executor": "Run",
     "JUnit.VerbosHTTP.naoDeveRemoverUsuario.executor": "Run",
@@ -92,7 +89,7 @@
       <recent name="org.estudos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto">
+  <component name="RunManager" selected="JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario">
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -109,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VerbosHTTP.deveCustomizarURLParte2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
       <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="deveCustomizarURLParte2" />
+      <option name="METHOD_NAME" value="deveDeserializarObjetoAoSalvarUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto" />
+        <item itemvalue="JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario" />
         <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap" />
+        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto" />
         <item itemvalue="JUnit.VerbosHTTP.naoDeveRemoverUsuario" />
         <item itemvalue="JUnit.VerbosHTTP.deveRemoverUsuario" />
-        <item itemvalue="JUnit.VerbosHTTP.deveCustomizarURLParte2" />
       </list>
     </recent_temporary>
   </component>
