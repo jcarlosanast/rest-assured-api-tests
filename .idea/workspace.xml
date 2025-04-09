@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/EnvioDadosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/FileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HTML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/SchemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schemaxsd.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" afterDir="false" />
     </list>
@@ -36,11 +42,22 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.HelloWorld.executor": "Run",
+    "JUnit.EnvioDadosTest.deveEnviarValorViaHeader.executor": "Run",
+    "JUnit.EnvioDadosTest.deveEnviarValorViaPAram.executor": "Run",
+    "JUnit.EnvioDadosTest.deveEnviarValorViaQuery.executor": "Run",
+    "JUnit.EnvioDadosTest.deveEnviarValorViaQueryJSON.executor": "Run",
+    "JUnit.FileTest.deveDownloadFile.executor": "Debug",
+    "JUnit.FileTest.deveFazerUploafToFile.executor": "Run",
+    "JUnit.FileTest.deveObrigarEnvioFile.executor": "Run",
+    "JUnit.HTML.deveFazerBuscarComHTML.executor": "Run",
+    "JUnit.HTML.deveFazerBuscarComXpahEmHTML.executor": "Run",
     "JUnit.HelloWordTest.devoConhecerMatchersHamcrest.executor": "Run",
     "JUnit.HelloWordTest.devoConhecerOutrasFormasRestAssured.executor": "Run",
     "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
     "JUnit.HelloWordTest.executor": "Debug",
     "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.SchemaTest.deveValidarSchemaXML.executor": "Run",
+    "JUnit.SchemaTest.naoDeveValidarSchemaXML.executor": "Run",
     "JUnit.UserJsonTest.deveRetornarErroUsuario.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarLista.executor": "Run",
     "JUnit.UserJsonTest.deveVerificarListaNaRaiz.executor": "Run",
@@ -63,11 +80,13 @@
     "JUnit.VerbosHTTP.deveCustomizarURL.executor": "Run",
     "JUnit.VerbosHTTP.deveCustomizarURLParte2.executor": "Run",
     "JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario.executor": "Run",
+    "JUnit.VerbosHTTP.deveDeserializarXMLAoSalvarUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveRemoverUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuario.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto.executor": "Run",
     "JUnit.VerbosHTTP.deveSalvarUsuarioViaXML.executor": "Run",
+    "JUnit.VerbosHTTP.deveSalvarUsuarioViaXMLUsandoObjeto.executor": "Run",
     "JUnit.VerbosHTTP.naoDeveRemoverUsuario.executor": "Run",
     "JUnit.VerbosHTTP.naoDeveSalvarUsuarioSemNove.executor": "Run",
     "Maven.rest-assured [clean].executor": "Run",
@@ -81,7 +100,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "branch1",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jayci/Workspace/Rest-Assured",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,7 +112,55 @@
       <recent name="org.estudos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario">
+  <component name="RunManager" selected="JUnit.SchemaTest.naoDeveValidarSchemaXML">
+    <configuration name="FileTest.deveDownloadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
+      <option name="METHOD_NAME" value="deveDownloadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.deveFazerUploafToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
+      <option name="METHOD_NAME" value="deveFazerUploafToFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.deveObrigarEnvioFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
+      <option name="METHOD_NAME" value="deveObrigarEnvioFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -106,7 +177,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SchemaTest.deveValidarSchemaXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -115,14 +186,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="deveDeserializarObjetoAoSalvarUsuario" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.SchemaTest" />
+      <option name="METHOD_NAME" value="deveValidarSchemaXML" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VerbosHTTP.deveRemoverUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SchemaTest.naoDeveValidarSchemaXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -131,56 +202,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="deveRemoverUsuario" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerbosHTTP.deveSalvarUsuarioUsandoMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="deveSalvarUsuarioUsandoMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerbosHTTP.deveSalvarUsuarioUsandoObjeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="deveSalvarUsuarioUsandoObjeto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerbosHTTP.naoDeveRemoverUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.VerbosHTTP" />
-      <option name="METHOD_NAME" value="naoDeveRemoverUsuario" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.SchemaTest" />
+      <option name="METHOD_NAME" value="naoDeveValidarSchemaXML" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VerbosHTTP.deveDeserializarObjetoAoSalvarUsuario" />
-        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoMap" />
-        <item itemvalue="JUnit.VerbosHTTP.deveSalvarUsuarioUsandoObjeto" />
-        <item itemvalue="JUnit.VerbosHTTP.naoDeveRemoverUsuario" />
-        <item itemvalue="JUnit.VerbosHTTP.deveRemoverUsuario" />
+        <item itemvalue="JUnit.SchemaTest.naoDeveValidarSchemaXML" />
+        <item itemvalue="JUnit.SchemaTest.deveValidarSchemaXML" />
+        <item itemvalue="JUnit.FileTest.deveDownloadFile" />
+        <item itemvalue="JUnit.FileTest.deveFazerUploafToFile" />
+        <item itemvalue="JUnit.FileTest.deveObrigarEnvioFile" />
       </list>
     </recent_temporary>
   </component>

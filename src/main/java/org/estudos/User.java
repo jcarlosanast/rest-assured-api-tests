@@ -1,11 +1,20 @@
 package org.estudos;
 
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(name = "user")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class User {
 
+    @XmlAttribute
     private long id;
     private String name;
     private Integer age;
     private Double salary;
+
+    public User() {
+
+    }
 
     public User(String name, Integer age) {
         this.name = name;
