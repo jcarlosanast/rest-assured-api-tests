@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/exercicio/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/exercicio/base/Constantes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tests/Movimentacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/test/refac/AuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/test/refac/ContasTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/test/refac/MovimentacaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/test/refac/SaldoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/utils/DataUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,10 @@
     "JUnit.AuthTest.deveFazerAutenticacaoComToken.executor": "Run",
     "JUnit.AuthTest.deveObterClima.executor": "Run",
     "JUnit.AuthTest.executor": "Run",
+    "JUnit.ContasTest.deveAlterarContaComSucesso.executor": "Run",
+    "JUnit.ContasTest.deveIncluirContaComSucesso.executor": "Run",
+    "JUnit.ContasTest.executor": "Run",
+    "JUnit.ContasTest.t04_naoDeveInserirContanComMesmoNome.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaHeader.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaPAram.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaQuery.executor": "Run",
@@ -64,16 +70,27 @@
     "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
     "JUnit.HelloWordTest.executor": "Debug",
     "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.MovimentacaoTest.deveRemoverMovimentacao.executor": "Run",
+    "JUnit.MovimentacaoTest.executor": "Run",
+    "JUnit.MovimentacaoTest.naoDeveRemoverContaComMovimentacao.executor": "Run",
+    "JUnit.MovimentacaoTest.t05_deveInserirMovimentacaoSucesso.executor": "Debug",
+    "JUnit.MovimentacaoTest.t06_deveValidarCamposObrigatoriosMovimentacao.executor": "Run",
+    "JUnit.MovimentacaoTest.t07_naoDeveInserirMovimentacaoComDataFutura.executor": "Run",
     "JUnit.PrimeiroTest.deveAlterarContaComSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveCalcularSaldoContas.executor": "Run",
     "JUnit.PrimeiroTest.deveExcluirContaComSucesso.executor": "Run",
     "JUnit.PrimeiroTest.deveIncluirContaComSucesso.executor": "Run",
     "JUnit.PrimeiroTest.deveInserirMovimentacaoSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveRemoverMovimentacao.executor": "Run",
     "JUnit.PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao.executor": "Run",
     "JUnit.PrimeiroTest.executor": "Run",
     "JUnit.PrimeiroTest.naoDeveAcessarAPISemToken.executor": "Run",
     "JUnit.PrimeiroTest.naoDeveInserirContanComMesmoNome.executor": "Run",
     "JUnit.PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura.executor": "Run",
     "JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir.executor": "Run",
+    "JUnit.PrimeiroTest.t01_naoDeveAcessarAPISemToken.executor": "Run",
+    "JUnit.PrimeiroTest.t02_deveIncluirContaComSucesso.executor": "Run",
+    "JUnit.SaldoTest.t09_deveCalcularSaldoContas.executor": "Run",
     "JUnit.SchemaTest.deveValidarSchemaJSON.executor": "Run",
     "JUnit.SchemaTest.deveValidarSchemaXML.executor": "Run",
     "JUnit.SchemaTest.naoDeveValidarSchemaXML.executor": "Run",
@@ -108,6 +125,7 @@
     "JUnit.VerbosHTTP.deveSalvarUsuarioViaXMLUsandoObjeto.executor": "Run",
     "JUnit.VerbosHTTP.naoDeveRemoverUsuario.executor": "Run",
     "JUnit.VerbosHTTP.naoDeveSalvarUsuarioSemNove.executor": "Run",
+    "JUnit.org.rest.test.refac in rest-assured.executor": "Run",
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
     "Maven.rest-assured [install].executor": "Run",
@@ -133,8 +151,42 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.estudos" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.rest.test.refac" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir">
+  <component name="RunManager" selected="JUnit.AuthTest.naoDeveAcessarAPISemToken">
+    <configuration name="AuthTest.naoDeveAcessarAPISemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rest.test.refac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rest.test.refac" />
+      <option name="MAIN_CLASS_NAME" value="org.rest.test.refac.AuthTest" />
+      <option name="METHOD_NAME" value="naoDeveAcessarAPISemToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rest.test.refac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rest.test.refac" />
+      <option name="MAIN_CLASS_NAME" value="org.rest.test.refac.ContasTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -151,93 +203,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeiroTest.deveIncluirContaComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovimentacaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.tests.*" />
+          <option name="PATTERN" value="org.rest.test.refac.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
-      <option name="METHOD_NAME" value="deveIncluirContaComSucesso" />
+      <option name="PACKAGE_NAME" value="org.rest.test.refac" />
+      <option name="MAIN_CLASS_NAME" value="org.rest.test.refac.MovimentacaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaldoTest.t09_deveCalcularSaldoContas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rest.test.refac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rest.test.refac" />
+      <option name="MAIN_CLASS_NAME" value="org.rest.test.refac.SaldoTest" />
+      <option name="METHOD_NAME" value="t09_deveCalcularSaldoContas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeiroTest.deveInserirMovimentacaoSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="org.rest.test.refac in rest-assured" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.tests.*" />
+          <option name="PATTERN" value="org.rest.test.refac.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
-      <option name="METHOD_NAME" value="deveInserirMovimentacaoSucesso" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
-      <option name="METHOD_NAME" value="deveValidarCamposObrigatoriosMovimentacao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
-      <option name="METHOD_NAME" value="naoDeveInserirMovimentacaoComDataFutura" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
-      <option name="METHOD_NAME" value="naoDeveRemoverContaComMovimentacaoInserir" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.rest.test.refac" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir" />
-        <item itemvalue="JUnit.PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura" />
-        <item itemvalue="JUnit.PrimeiroTest.deveInserirMovimentacaoSucesso" />
-        <item itemvalue="JUnit.PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao" />
-        <item itemvalue="JUnit.PrimeiroTest.deveIncluirContaComSucesso" />
+        <item itemvalue="JUnit.AuthTest.naoDeveAcessarAPISemToken" />
+        <item itemvalue="JUnit.ContasTest" />
+        <item itemvalue="JUnit.org.rest.test.refac in rest-assured" />
+        <item itemvalue="JUnit.SaldoTest.t09_deveCalcularSaldoContas" />
+        <item itemvalue="JUnit.MovimentacaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,8 +301,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
-          <line>42</line>
-          <properties class="org.tests.PrimeiroTest" method="deveIncluirContaComSucesso">
+          <line>41</line>
+          <properties class="org.tests.PrimeiroTest" method="t02_deveIncluirContaComSucesso">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -293,8 +310,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
-          <line>125</line>
-          <properties class="org.tests.PrimeiroTest" method="naoDeveInserirMovimentacaoComDataFutura">
+          <line>119</line>
+          <properties class="org.tests.PrimeiroTest" method="t07_naoDeveInserirMovimentacaoComDataFutura">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -302,12 +319,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
-          <line>160</line>
-          <properties class="org.tests.PrimeiroTest" method="naoDeveRemoverContaComMovimentacaoInserir">
+          <line>153</line>
+          <properties class="org.tests.PrimeiroTest" method="t08_naoDeveRemoverContaComMovimentacaoInserir">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
+          <line>165</line>
+          <properties class="org.tests.PrimeiroTest" method="t09_deveCalcularSaldoContas">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
