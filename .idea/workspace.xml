@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/exercicio/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/exercicio/base/Constantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tests/Movimentacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,6 +31,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2v8TkEsKipXX51StNvXQN9pqX7e" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +64,16 @@
     "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
     "JUnit.HelloWordTest.executor": "Debug",
     "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.PrimeiroTest.deveAlterarContaComSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveExcluirContaComSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveIncluirContaComSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveInserirMovimentacaoSucesso.executor": "Run",
+    "JUnit.PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao.executor": "Run",
+    "JUnit.PrimeiroTest.executor": "Run",
+    "JUnit.PrimeiroTest.naoDeveAcessarAPISemToken.executor": "Run",
+    "JUnit.PrimeiroTest.naoDeveInserirContanComMesmoNome.executor": "Run",
+    "JUnit.PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura.executor": "Run",
+    "JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir.executor": "Run",
     "JUnit.SchemaTest.deveValidarSchemaJSON.executor": "Run",
     "JUnit.SchemaTest.deveValidarSchemaXML.executor": "Run",
     "JUnit.SchemaTest.naoDeveValidarSchemaXML.executor": "Run",
@@ -116,86 +134,7 @@
       <recent name="org.estudos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthTest.deveAcessarAplicacaoWeb">
-    <configuration name="AuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthTest.deveAcessarAplicacaoWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
-      <option name="METHOD_NAME" value="deveAcessarAplicacaoWeb" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthTest.deveFazerAutenticacaoBasicaChallenge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
-      <option name="METHOD_NAME" value="deveFazerAutenticacaoBasicaChallenge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthTest.deveFazerAutenticacaoBasicaTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
-      <option name="METHOD_NAME" value="deveFazerAutenticacaoBasicaTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthTest.deveFazerAutenticacaoComToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
-      <option name="METHOD_NAME" value="deveFazerAutenticacaoComToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir">
     <configuration name="HelloWordTest.devoConhecerOutrasFormasRestAssured" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -212,13 +151,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimeiroTest.deveIncluirContaComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
+      <option name="METHOD_NAME" value="deveIncluirContaComSucesso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroTest.deveInserirMovimentacaoSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
+      <option name="METHOD_NAME" value="deveInserirMovimentacaoSucesso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
+      <option name="METHOD_NAME" value="deveValidarCamposObrigatoriosMovimentacao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
+      <option name="METHOD_NAME" value="naoDeveInserirMovimentacaoComDataFutura" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PrimeiroTest" />
+      <option name="METHOD_NAME" value="naoDeveRemoverContaComMovimentacaoInserir" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthTest.deveAcessarAplicacaoWeb" />
-        <item itemvalue="JUnit.AuthTest" />
-        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoComToken" />
-        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoBasicaChallenge" />
-        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoBasicaTwo" />
+        <item itemvalue="JUnit.PrimeiroTest.naoDeveRemoverContaComMovimentacaoInserir" />
+        <item itemvalue="JUnit.PrimeiroTest.naoDeveInserirMovimentacaoComDataFutura" />
+        <item itemvalue="JUnit.PrimeiroTest.deveInserirMovimentacaoSucesso" />
+        <item itemvalue="JUnit.PrimeiroTest.deveValidarCamposObrigatoriosMovimentacao" />
+        <item itemvalue="JUnit.PrimeiroTest.deveIncluirContaComSucesso" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +281,33 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
+          <line>42</line>
+          <properties class="org.tests.PrimeiroTest" method="deveIncluirContaComSucesso">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
+          <line>125</line>
+          <properties class="org.tests.PrimeiroTest" method="naoDeveInserirMovimentacaoComDataFutura">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/tests/PrimeiroTest.java</url>
+          <line>160</line>
+          <properties class="org.tests.PrimeiroTest" method="naoDeveRemoverContaComMovimentacaoInserir">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/estudos/UserJsonTest.java</url>
