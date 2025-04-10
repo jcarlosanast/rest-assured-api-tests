@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85a20dfb-6e97-400a-8d5b-b72209a08aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/EnvioDadosTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/FileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/HTML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/SchemaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schemaxsd.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/estudos/AuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/VerbosHTTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/estudos/SchemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/estudos/SchemaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,14 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.HelloWorld.executor": "Run",
+    "JUnit.AuthTest.deveAcessarAplicacaoWeb.executor": "Run",
+    "JUnit.AuthTest.deveAcessarSWAPI.executor": "Run",
+    "JUnit.AuthTest.deveFazerAutenticacaoBasica.executor": "Run",
+    "JUnit.AuthTest.deveFazerAutenticacaoBasicaChallenge.executor": "Run",
+    "JUnit.AuthTest.deveFazerAutenticacaoBasicaTwo.executor": "Run",
+    "JUnit.AuthTest.deveFazerAutenticacaoComToken.executor": "Run",
+    "JUnit.AuthTest.deveObterClima.executor": "Run",
+    "JUnit.AuthTest.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaHeader.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaPAram.executor": "Run",
     "JUnit.EnvioDadosTest.deveEnviarValorViaQuery.executor": "Run",
@@ -56,6 +61,7 @@
     "JUnit.HelloWordTest.devoValidarOBody.executor": "Run",
     "JUnit.HelloWordTest.executor": "Debug",
     "JUnit.HelloWordTest.testHelloWord.executor": "Run",
+    "JUnit.SchemaTest.deveValidarSchemaJSON.executor": "Run",
     "JUnit.SchemaTest.deveValidarSchemaXML.executor": "Run",
     "JUnit.SchemaTest.naoDeveValidarSchemaXML.executor": "Run",
     "JUnit.UserJsonTest.deveRetornarErroUsuario.executor": "Run",
@@ -92,6 +98,9 @@
     "Maven.rest-assured [clean].executor": "Run",
     "Maven.rest-assured [compile].executor": "Run",
     "Maven.rest-assured [install].executor": "Run",
+    "Maven.rest-assured [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.rest-assured [org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile].executor": "Run",
+    "Maven.rest-assured [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
     "Maven.rest-assured [package].executor": "Run",
     "Maven.rest-assured [test].executor": "Run",
     "Maven.rest-assured [validate].executor": "Run",
@@ -112,8 +121,8 @@
       <recent name="org.estudos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SchemaTest.naoDeveValidarSchemaXML">
-    <configuration name="FileTest.deveDownloadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AuthTest.deveAcessarAplicacaoWeb">
+    <configuration name="AuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +131,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
-      <option name="METHOD_NAME" value="deveDownloadFile" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthTest.deveAcessarAplicacaoWeb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
+      <option name="METHOD_NAME" value="deveAcessarAplicacaoWeb" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileTest.deveFazerUploafToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthTest.deveFazerAutenticacaoBasicaChallenge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -138,14 +162,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
-      <option name="METHOD_NAME" value="deveFazerUploafToFile" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
+      <option name="METHOD_NAME" value="deveFazerAutenticacaoBasicaChallenge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileTest.deveObrigarEnvioFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthTest.deveFazerAutenticacaoBasicaTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -154,8 +178,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.FileTest" />
-      <option name="METHOD_NAME" value="deveObrigarEnvioFile" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
+      <option name="METHOD_NAME" value="deveFazerAutenticacaoBasicaTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthTest.deveFazerAutenticacaoComToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.estudos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.estudos" />
+      <option name="MAIN_CLASS_NAME" value="org.estudos.AuthTest" />
+      <option name="METHOD_NAME" value="deveFazerAutenticacaoComToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,45 +217,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchemaTest.deveValidarSchemaXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.SchemaTest" />
-      <option name="METHOD_NAME" value="deveValidarSchemaXML" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SchemaTest.naoDeveValidarSchemaXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.estudos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.estudos" />
-      <option name="MAIN_CLASS_NAME" value="org.estudos.SchemaTest" />
-      <option name="METHOD_NAME" value="naoDeveValidarSchemaXML" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SchemaTest.naoDeveValidarSchemaXML" />
-        <item itemvalue="JUnit.SchemaTest.deveValidarSchemaXML" />
-        <item itemvalue="JUnit.FileTest.deveDownloadFile" />
-        <item itemvalue="JUnit.FileTest.deveFazerUploafToFile" />
-        <item itemvalue="JUnit.FileTest.deveObrigarEnvioFile" />
+        <item itemvalue="JUnit.AuthTest.deveAcessarAplicacaoWeb" />
+        <item itemvalue="JUnit.AuthTest" />
+        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoComToken" />
+        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoBasicaChallenge" />
+        <item itemvalue="JUnit.AuthTest.deveFazerAutenticacaoBasicaTwo" />
       </list>
     </recent_temporary>
   </component>

@@ -1,7 +1,7 @@
 package org.estudos;
 
-import io.restassured.RestAssured;
 import io.restassured.matcher.RestAssuredMatchers;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
@@ -36,7 +36,22 @@ public class SchemaTest {
         .then()
             .statusCode(200)
             .log().all()
-            .body(RestAssuredMatchers.matchesXsdInClasspath("schemaxsd.xsd"))
+            .body(RestAssuredMatchers.matchesXsdInClasspath("schemaxsd.xsd"));
+    }
+
+    @Test
+    public void deveValidarSchemaJSON() {
+
+        given()
+            .log().all()
+        .when()
+            .get("https://restapi.wcaquino.me/users")
+        .then()
+            .statusCode(200)
+            .log().all()
+            .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("users.json"))
         ;
     }
+
+
 }
